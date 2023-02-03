@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.scss'
+import Hero from './components/hero/hero'
 import Button from './components/button/button'
 
 function App() {
@@ -11,6 +12,7 @@ useEffect(() => {
 
   return (
     <div className="App">
+      <Hero />
       <Button text={'Dark Mode'} clickEvent={() => setDarkMode(!darkMode)} />
     </div>
   )
