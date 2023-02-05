@@ -1,0 +1,20 @@
+[
+    {
+        "name" : "Loader",
+        "info" : "Spining loader and loadpage",
+        "gifname" : "loader",
+        "url" : "https://codepen.io/timand1/pen/PoBVXEx"
+    },
+    {
+        "name" : "Menu",
+        "info" : "Fries menu close / open animation",
+        "gifname" : "fries",
+        "url" : "https://codepen.io/timand1/pen/bGjZwdx"
+    },
+    {
+        "name" : "Search",
+        "info" : "Search bar with animations",
+        "gifname" : "search",
+        "url" : "https://codepen.io/timand1/pen/OJwqbgJ"
+    }
+]

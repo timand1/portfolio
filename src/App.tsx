@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.scss'
 import Hero from './components/hero/hero'
 import Button from './components/button/button'
+import Extra from './components/extra/extra'
 
 function App() {
 const [darkMode, setDarkMode] = useState(false)
@@ -14,6 +15,7 @@ useEffect(() => {
     <div className="App">
       <Hero />
       <Button text={'Dark Mode'} clickEvent={() => setDarkMode(!darkMode)} />
+      <Extra />
     </div>
   )
 }

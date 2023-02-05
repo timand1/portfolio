@@ -58,7 +58,7 @@
             left: -3rem;
             bottom: -3rem;
             z-index: 1;
-            max-width: 20%;
+            max-width: 30%;
             border: 1px solid colors.$content-light;
         }
 
@@ -119,6 +119,7 @@
 
 @media screen and (max-width: 786px) {
     .hero {
+        overflow: hidden;
         .hero--content {
             height: 400px;
             position: relative;
@@ -128,8 +129,7 @@
             }
             .hero--image {
                 position: relative;
-                top: -10%;
-                left: -10%;
+                transform: translateX(-30px) translateY(-40px);
                 min-width: 90%;
                 overflow: hidden;
                 img {
@@ -140,6 +140,7 @@
                 }
             }
             .hero--text  {
+                transform: translateX(30px);
                 position: absolute;
                 background: colors.$content-light;
                 backdrop-filter: blur(20px);
