@@ -1,10 +1,11 @@
 .experiment {
     all: unset;
     width: calc(33.33% - 80px);
-    height: 100%;
+    min-height: 100%;
     padding: 40px;
     cursor: pointer;
     box-shadow: inset 82px 71px 51px rgba(0, 0, 0, 0.11);
+    transition: all 0.2s;
     .experiment-number {
         position: relative;        
         span {
@@ -67,6 +68,7 @@
     }
     
     &:hover {
+        box-shadow: inset 102px 101px 71px rgba(197, 72, 72, 0.11);
         .experiment-number {
             span {
                 width: 30px;
@@ -78,7 +80,21 @@
         .gif-container {
             img {
                 scale: 110%;
+                
             }
         }
     }        
+}
+
+@media screen and (max-width: 786px) {
+    .experiment {
+        width: 100%;
+        padding: 0;
+        .experiment-number {
+            margin: 40px 0 0 40px;
+        }
+        .title-container {
+            margin: 0 0 40px 40px;
+        }
+    }
 }

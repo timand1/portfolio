@@ -1,4 +1,5 @@
 .extra {
+    margin-top: 40px;
     .title {
         text-align: center;
         p {
@@ -13,9 +14,18 @@
         }
     }
     .experiments-container {
-        height: 400px;
+        height: min-content;
         margin-top: 40px;
         display: flex;
         flex: 1;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .extra {
+        .experiments-container {
+            flex-direction: column;
+            max-height: 100%;
+        }
     }
 }

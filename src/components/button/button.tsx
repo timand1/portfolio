@@ -1,9 +1,8 @@
-import { useEffect, useState } from 'react'
 import './button.scss'
 
 type ButtonProps = {
     text: string
-    clickEvent: (x:any) => void;
+    clickEvent?: (x:any) => void;
 }
 
 function Button(props: ButtonProps) {

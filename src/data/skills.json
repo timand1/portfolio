@@ -1,0 +1,14 @@
+[
+    {
+        "title" : "Frontend",
+        "info" : "I enjoy to code ideas to life. Both from scrath and smaller parts in bigger projects",
+        "languages" : ["JavaScript", "TypeScript", "React", "Vue", "CSS", "SCSS", "Nodejs", "Express", "HTML"],
+        "tools" : ["Vitest", "Storybook", "Bootstrap", "GitHub", "Docker" ,"GraphJS", "AnimeJS"]
+    },
+    {
+        "title" : "Design",
+        "info" : "I value good user experince with clean design, structure and thoughtful interactions and animation",
+        "enjoy" : ["Web", "UX", "UI", "Mobile", "Logos"],
+        "tools" : ["Figma", "Font Awesome", "Material Design", "Google Fonts", "Pen & paper"]
+    }
+]

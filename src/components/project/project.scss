@@ -1,0 +1,46 @@
+.project {
+    position: relative;
+    height: 50vh;
+    width: 65vw;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 14px;
+    box-shadow: 0 20px 80px 0 rgb(0 0 0 / 45%);
+    &:nth-child(odd) {
+        transform: translateX(-200%);
+    }
+    &:nth-child(even) {
+        transform: translateX(200%);
+    }
+    .project-extra {
+        display: flex;
+    }
+
+    .project-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        pointer-events: none;
+        z-index: -2;
+        &::before {
+            content: '';
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #1c1d25;
+            opacity: 0.9;
+            z-index: -1;
+        }
+    }
+}

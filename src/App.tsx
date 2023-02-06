@@ -1,21 +1,18 @@
-import { useEffect, useState } from 'react'
+import { Routes, HashRouter, Route } from "react-router-dom";
 import './App.scss'
-import Hero from './components/hero/hero'
-import Button from './components/button/button'
-import Extra from './components/extra/extra'
+import Homepage from './views/homepage/homepage'
+import ProjectFull from "./views/projectFull/projectFull";
 
 function App() {
-const [darkMode, setDarkMode] = useState(false)
-
-useEffect(() => {
-  darkMode ? document.querySelector('body')?.classList.add('dark') : document.querySelector('body')?.classList.remove('dark')
-}, [darkMode])
-
+  
   return (
     <div className="App">
-      <Hero />
-      <Button text={'Dark Mode'} clickEvent={() => setDarkMode(!darkMode)} />
-      <Extra />
+      <HashRouter>
+        <Routes>
+          <Route path='/'element={<Homepage />} />
+          <Route path='/:title' element={<ProjectFull />} />
+        </Routes>
+      </HashRouter>
     </div>
   )
 }

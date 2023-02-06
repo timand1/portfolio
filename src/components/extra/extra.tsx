@@ -1,5 +1,5 @@
 import Experiments from '../experiments/experiments'
-import experimentsData from '../../data/data.json'
+import experimentsData from '../../data/experiments.json'
 import './extra.scss'
 
 function Extra() {  
@@ -10,7 +10,7 @@ function Extra() {
     <div className='extra'>
       <div className="title">
         <p>Small personal projects</p>
-        <h2>Frontend, but no fun end</h2>
+        <h2>No end in fun</h2>
       </div>
        <section className='experiments-container'>
         {experiments}

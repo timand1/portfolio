@@ -1,0 +1,52 @@
+[
+    {
+        "title" : "Rocksalt",
+        "shortInfo" : "For both customers and personnel",
+        "info" : "Website for a restaurant with a log in for both users and admin",
+        "type" : "Group School project",
+        "personal" : ["JavaScript", "TypeScript", "React", "SCSS", "Figma", "Nodejs", "Express", "Docker"],
+        "time" : "October 2022",
+        "url" : "https://rocksalt.onrender.com/",
+        "github" : ["https://github.com/folkuni-f21-fullstack/mighty-zebras-fullstack"]
+    },
+    {
+        "title" : "Rewind",
+        "shortInfo" : "Everything about a match in one place",
+        "info" : "Website to upload matches in different games. Able to update games, see leaderboards etc",
+        "type" : "School project",
+        "personal" : ["JavaScript", "TypeScript", "React", "SCSS", "Nodejs", "Express", "Docker", "Figma"],
+        "time" : "September 2022",
+        "url" : "https://rewind.onrender.com/",
+        "github" : ["https://github.com/timand1/rewind"]
+    },
+    {
+        "title" : "Shopperlist",
+        "shortInfo" : "The list you need",
+        "info" : "Simple app to add items to a list and a favorites list. Saved in a database",
+        "type" : "Personal project",
+        "personal" : ["JavaScript", "React", "SCSS", "Nodejs", "Express", "Figma"],
+        "time" : "June 2022",
+        "url" : "https://shopperlist.netlify.app/",
+        "github" : ["https://github.com/timand1/shopperlist", "https://github.com/timand1/shopping-list"]
+    },
+    {
+        "title" : "Nobelcharts",
+        "shortInfo" : "Charts with a spin",
+        "info" : "Website to show various nobel laureates data in graphs with 'fun' animation. Animations from 90's cartoons",
+        "type" : "School project",
+        "personal" : ["JavaScript", "TypeScript", "Vue", "SCSS", "AnimeJS", "GraphJS", "Docker", "Figma"],
+        "time" : "November 2022",
+        "url" : "https://nobelcharts.netlify.app/",
+        "github" : ["https://github.com/timand1/nobel-graphs"]
+    },
+    {
+        "title" : "Rescue Rabbits",
+        "shortInfo" : "A hope to save them all",
+        "info" : "Simple website for an Animal Shelter to show and search for animals the shelter have",
+        "type" : "Group School project",
+        "personal" : ["JavaScript", "TypeScript", "Vue", "SCSS", "Figma"],
+        "time" : "September 2022",
+        "url" : "",
+        "github" : ["https://github.com/timand1/rescue-rabbits-magic-monkeys"]
+    }
+]
