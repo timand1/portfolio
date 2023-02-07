@@ -66,7 +66,7 @@ useEffect(() => {
           </div>
         </div>
       
-        <footer onClick={() => navigate(`/${nextProject}`)}>
+        <footer className='project-footer' onClick={() => navigate(`/${nextProject}`)}>
           <h3>Next project HÖGERPIL <span>{nextProject}</span></h3>
         </footer>
       </div>    

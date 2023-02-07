@@ -1,6 +1,6 @@
 .project-full {
     position: relative;
-    height: 80vh;
+    height: 77vh;
     width: 100%;
     color: #fff;
     padding: 40px;
@@ -37,5 +37,9 @@
             opacity: 0.9;
             z-index: -1;
         }
+    }
+
+    .project-footer {
+        height: 15vh;
     }
 }

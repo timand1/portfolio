@@ -48,27 +48,19 @@
     }
     
     .title-container {
+        text-align: center;
         p {
             &:first-child {
                 position: relative;
                 text-transform: uppercase;
                 font-size: 12px;
                 font-weight: 700;
-                &::before {
-                    position: absolute;
-                    content: '';
-                    width: 10px;
-                    height: 1px;
-                    background-color: black;
-                    top: 8px;
-                    left: -15px;
-                }
             }
         }
     }
     
     &:hover {
-        box-shadow: inset 102px 101px 71px rgba(197, 72, 72, 0.11);
+        box-shadow: inset 102px 101px 71px rgba(33, 88, 45, 0.11);
         .experiment-number {
             span {
                 width: 30px;

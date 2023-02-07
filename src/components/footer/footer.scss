@@ -14,12 +14,11 @@
         a {
             display: flex;
             align-items: center;
-            gap: 4px;
+            gap: 10px;
             
-            img {
-                max-height: 18px;
-                -webkit-filter: invert(100%); /* Safari/Chrome */
-                filter: invert(100%);
+            svg {
+                color: white;
+                font-size: 18px;
             }
         }
     }

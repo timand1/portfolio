@@ -31,22 +31,13 @@
     },
     {
         "title" : "Nobelcharts",
-        "shortInfo" : "Charts with a spin",
+        "shortInfo" : "Charts with a twist",
         "info" : "Website to show various nobel laureates data in graphs with 'fun' animation. Animations from 90's cartoons",
         "type" : "School project",
         "personal" : ["JavaScript", "TypeScript", "Vue", "SCSS", "AnimeJS", "GraphJS", "Docker", "Figma"],
         "time" : "November 2022",
         "url" : "https://nobelcharts.netlify.app/",
         "github" : ["https://github.com/timand1/nobel-graphs"]
-    },
-    {
-        "title" : "Rescue Rabbits",
-        "shortInfo" : "A hope to save them all",
-        "info" : "Simple website for an Animal Shelter to show and search for animals the shelter have",
-        "type" : "Group School project",
-        "personal" : ["JavaScript", "TypeScript", "Vue", "SCSS", "Figma"],
-        "time" : "September 2022",
-        "url" : "",
-        "github" : ["https://github.com/timand1/rescue-rabbits-magic-monkeys"]
     }
 ]
+

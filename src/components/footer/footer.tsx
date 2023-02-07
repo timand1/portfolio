@@ -1,6 +1,6 @@
 import './footer.scss'
-import githubLogo from '../../assets/github.svg'
-import linkedinLogo from '../../assets/linkedin.svg'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {  
 
@@ -9,8 +9,8 @@ function Footer() {
     return (
       <div className='footer'>
         <div className="footer-links">
-            <a href="https://github.com/timand1">GitHub <img src={githubLogo} alt="GitHub Logo" /></a>
-            <a href="https://www.linkedin.com/in/tim-andersson-04531b253/">LinkedIn <img src={linkedinLogo} alt="LinkedIn Logo" /></a>
+            <a href="https://github.com/timand1">GitHub  <FontAwesomeIcon icon={faLinkedin} /></a>
+            <a href="https://www.linkedin.com/in/tim-andersson-04531b253/">LinkedIn <FontAwesomeIcon icon={faGithub} /></a>
         </div>
         <p>	&#169; Tim Andersson {date} - <a href="mailto:timandersson22@live.se">Contact</a></p>
       </div>    
