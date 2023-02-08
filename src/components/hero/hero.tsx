@@ -135,7 +135,7 @@ function Hero() {
                 <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a href="https://www.linkedin.com/in/tim-andersson-04531b253/" target="_blank">
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a href="mailto: timandersson22@live.se">
                 <FontAwesomeIcon icon={faEnvelope} />
