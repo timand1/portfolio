@@ -2,15 +2,21 @@
 
 .experiment {
     all: unset;
-    width: calc(33.33% - 80px);
-    min-height: 100%;
-    padding: 40px;
+    width: calc(33.33% - 60px);
+    max-height: 350px;
+    padding: 30px;
     cursor: pointer;
     box-shadow: inset 82px 71px 51px rgba(0, 0, 0, 0.11);
     transition: all 0.2s;
     background-color: colors.$secondary-card-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
     .experiment-number {
-        position: relative;        
+        position: absolute;      
+        top: 10px;
+        left: 30px;  
         span {
             position: absolute;
             left: 0;
@@ -32,7 +38,7 @@
     
     .gif-container {
         width: 100%;
-        padding: 4em;
+        padding: 14px;
         display: flex;
         justify-content: center;
         img {

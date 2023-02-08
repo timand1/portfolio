@@ -89,16 +89,18 @@
         position: fixed;
         height: 100vh;
         top: 0;
-        left: 10px;
+        left: 25px;
     }
     .hero--links {
         z-index: 9999999;
         display: flex;
+        justify-content: center;
+        align-items: center;
         position: fixed;
         bottom: 107px;
         left: 0;
         height: fit-content;
-        width: fit-content;
+        width: 50px;
         padding: 10px 14px;
         flex-direction: column;
         background-color: colors.$secondary-bg;

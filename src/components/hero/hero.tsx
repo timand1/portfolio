@@ -132,7 +132,7 @@ function Hero() {
         </div>
         <div className='hero--links'>
             <a href="http://www.github.com/timand1" target="_blank">
-                <FontAwesomeIcon icon={faLinkedin} />
+                <FontAwesomeIcon icon={faGithub} />
             </a>
             <a href="https://www.linkedin.com/in/tim-andersson-04531b253/" target="_blank">
                 <FontAwesomeIcon icon={faLinkedin} />
@@ -145,9 +145,14 @@ function Hero() {
           <path d="M1 0V12.5H21L32.5 25.5V44.5L21 57.5H1V684H51.5V864.5H1V956.5" stroke="#4c7972" strokeWidth="4"/>
           </svg> */}
 
-        <svg className='scroll-indicator' width="59" height="955" viewBox="0 0 59 955" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {/* <svg className='scroll-indicator' width="59" height="955" viewBox="0 0 59 955" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 0V12.5H35.5L52.5 32.5V61L35.5 76.5H1V684.5H58V853.5H1V955"  stroke="#4c7972" strokeWidth="4"/>
-        </svg>
+        </svg> */}
+
+<svg className='scroll-indicator' width="2" height="1429" viewBox="0 0 2 1429" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.5V1428.5" stroke="#4c7972" strokeWidth="4" />
+</svg>
+
     </div>    
   )
 }

@@ -29,7 +29,7 @@ function Extra() {
       duration: 1000
     });
     
-      animation.seek(((elHeight - elScrollY + elHeight) / 500) * animation.duration);
+      animation.seek(((elHeight - elScrollY + elHeight) / 100) * animation.duration);
       window.addEventListener("scroll", setScroll);
       return () => {
       window.removeEventListener("scroll", setScroll);
@@ -41,7 +41,7 @@ function Extra() {
     <div className='extra' id='experiments'>
       <div className="title">
         <p>Small personal projects</p>
-        <h2>No end in fun</h2>
+        <h2>Bringing imagination to life through small projects is fun</h2>
       </div>
        <section className='experiments-container'>
         <div className='extra-overlay'></div>
