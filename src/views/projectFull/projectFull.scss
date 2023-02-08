@@ -3,7 +3,8 @@
 .project__container {
     .project__navbar {
         background-color: colors.$primary-bg;
-        height: 8vh;
+        height: 70px;
+        min-height: max-content;
         padding: 0 20px;
         display: flex;
         justify-content: space-between;
@@ -49,7 +50,7 @@
     }
     .project__full {
         position: relative;
-        height: 80vh;
+        min-height: 80vh;
         width: 100%;
         color: colors.$primary-font;
         display: flex;
@@ -57,9 +58,7 @@
         gap: 40px;
         padding: 40px 100px;
         box-shadow: 0 20px 80px 0 rgb(0 0 0 / 45%);
-
-
-        
+ 
         .project__full--left {
             position: relative;
             display: flex;
@@ -101,6 +100,7 @@
                 pointer-events: none;
             }
             .project__full--extra {
+                margin-top: 20px;
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
@@ -138,7 +138,7 @@
     
     }
     .project__full--footer {
-        height: 12vh;
+        height: 120px;
         background-color: colors.$primary-bg;
         display: flex;
         justify-content: space-between;
