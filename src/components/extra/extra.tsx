@@ -15,9 +15,10 @@ function Extra() {
   };
 
   useEffect(() => {
-    const overlayEl = document.querySelector('.extra-overlay') 
+    const overlayEl = document.querySelector('.extra-overlay')
     const elScrollY = overlayEl?.getBoundingClientRect().y!
     const elHeight = overlayEl?.getBoundingClientRect().height!
+    const scrollPercentage = (window.innerHeight - elScrollY) / elHeight
 
     let animation = anime({
       targets: '.extra-overlay',
@@ -26,10 +27,12 @@ function Extra() {
       elasticity: 200,
       easing: 'easeInOutSine',
       autoplay: false,
-      duration: 1000
+      duration: 10000
     });
-    
-      animation.seek(((elHeight - elScrollY + elHeight) / 100) * animation.duration);
+
+    if(elScrollY < 900) {
+      animation.seek(scrollPercentage * animation.duration);
+    }
       window.addEventListener("scroll", setScroll);
       return () => {
       window.removeEventListener("scroll", setScroll);
