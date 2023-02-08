@@ -1,14 +1,17 @@
+@use '../../styles/colors.scss';
+
 .knowledge {
     display: flex;
     border-radius: 12px;
     max-width: 60vw;
     min-height: 70vh;
     margin: 0 auto;
-    box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+    // box-shadow: 0 5px 5px 0 colors.$secondary-bg, 0 0 0 1px colors.$primary-font;
+    border: 2px solid colors.$secondary-bg;
     .skill:first-child {
         border-top-left-radius: 12px;
         border-bottom-left-radius: 12px;
-        border-right: 1px solid #e6ecf8;
+        border-right: 1px solid colors.$secondary-bg;
     }
     .skill:last-child {
         border-top-right-radius: 12px;

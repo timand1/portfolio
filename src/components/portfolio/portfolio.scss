@@ -1,13 +1,50 @@
+@use '../../styles/colors.scss';
+
 .portfolio {
-    margin: 40px auto;
+    margin: 100px auto;
     display: flex;
     flex-direction: column;
     gap: 50px;
-
+    max-width: 1200px;
+    
     .portfolio-title {
+        position: relative;
         text-transform: uppercase;
         text-align: center;
         font-size: 48px;
+        &:after {
+            position: absolute;
+            content: "";
+            width: 70%;
+            height: 4px;
+            background-color: colors.$primary-accent;
+            top: 0;
+            left: 0;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 70%;
+            height: 4px;
+            background-color: colors.$primary-accent;
+            bottom: 0;
+            right: 0;
+        }
     }
 
+}
+
+@media screen and (max-width: 786px) { 
+    .portfolio {
+        .portfolio-title {
+            font-size: 32px;
+            &:after {
+                width: 80%;
+            }    
+            &::before {
+                width: 80%;
+            }
+        }
+    }
 }

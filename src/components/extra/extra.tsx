@@ -38,7 +38,7 @@ function Extra() {
   }, [offset])
 
   return (
-    <div className='extra'>
+    <div className='extra' id='experiments'>
       <div className="title">
         <p>Small personal projects</p>
         <h2>No end in fun</h2>

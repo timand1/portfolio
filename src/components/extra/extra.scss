@@ -1,3 +1,5 @@
+@use '../../styles/colors.scss';
+
 .extra {
     margin-top: 40px;
     .title {
@@ -8,6 +10,7 @@
             font-weight: 700;
             font-family: monospace;
             margin-bottom: 20px;
+            color: colors.$secondary-bg;
         }
         h2 {
             font-size: 28px;
@@ -26,7 +29,7 @@
             transition: all .5s;
             height: 100%;
             width: 100%;
-            background-color: tomato;
+            background-color: colors.$primary-accent;
             z-index: 100;
         }
     }

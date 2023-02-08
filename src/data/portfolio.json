@@ -1,8 +1,18 @@
 [
     {
+        "title" : "Varnish Software",
+        "shortInfo" : "Foam is a Varnish software design system for building scalable web applications with ease. Whether small or large, Foam provides the tools for efficient and high-quality web application development.",
+        "info" : "Foam is a cutting-edge Varnish software design system that allows developers to create robust and scalable web applications with ease. It is designed to provide a streamlined development experience and help teams build high-quality applications quickly and efficiently. Whether you're building a small web application or a large enterprise-level system, Foam provides the tools and support you need to get the job done. With its focus on component-based architecture and thorough unit testing, Foam is the perfect solution for creating reliable and high-performing web applications.",
+        "type" : "Internship",
+        "personal" : ["JavaScript", "TypeScript", "Vue", "SCSS", "Figma", "Vitest", "Storybook"],
+        "time" : "December 2022 - February 2023",
+        "url" : "",
+        "github" : []
+    },
+    {
         "title" : "Rocksalt",
-        "shortInfo" : "For both customers and personnel",
-        "info" : "Website for a restaurant with a log in for both users and admin",
+        "shortInfo" : "Rocksalt is a restaurant website that offers easy food ordering through a user-friendly platform. Customers can order as guests or create an account. The website also has a staff log in section for managing orders and streamlining the process.",
+        "info" : "Rocksalt is a restaurant website that provides its customers with an easy and convenient platform to order food. Users have the option to either place an order as a guest or create an account for a personalized experience. In addition to the user-friendly interface, the website also includes a separate log in section for staff. This section allows the restaurant staff to handle incoming orders and ensure timely delivery to customers. The staff log in provides a centralized system for managing orders and streamlines the entire process.",
         "type" : "Group School project",
         "personal" : ["JavaScript", "TypeScript", "React", "SCSS", "Figma", "Nodejs", "Express", "Docker"],
         "time" : "October 2022",
@@ -11,8 +21,8 @@
     },
     {
         "title" : "Rewind",
-        "shortInfo" : "Everything about a match in one place",
-        "info" : "Website to upload matches in different games. Able to update games, see leaderboards etc",
+        "shortInfo" : "Rewind allows for easy uploading of match info, including players, time, images, etc. It can be updated for accuracy and features a real-time updated leaderboard per game to compare player scores.",
+        "info" : "With Rewind, you can easily upload information about your matches, including players, time, duration, images, and date. The website allows you to update the information if needed, ensuring that your data is always up-to-date and accurate. One of the unique features of Rewind is the leaderboard per game. This leaderboard allows you to see how all the players in a game perform and compare their scores. The leaderboard is updated in real-time and provides a comprehensive overview of the game's performance.",
         "type" : "School project",
         "personal" : ["JavaScript", "TypeScript", "React", "SCSS", "Nodejs", "Express", "Docker", "Figma"],
         "time" : "September 2022",
@@ -21,8 +31,8 @@
     },
     {
         "title" : "Shopperlist",
-        "shortInfo" : "The list you need",
-        "info" : "Simple app to add items to a list and a favorites list. Saved in a database",
+        "shortInfo" : "Shopperlist is an app for keeping track of shopping lists. It allows for adding/removing items with a few clicks and features a 'Favorites' list for frequently bought items, making shopping more efficient.",
+        "info" : "Shopperlist is a simple and easy-to-use app that helps you keep track of your shopping list. With Shopperlist, you can create a list of items that you need to buy, and add or remove items with just a few clicks. One key features of Shopperlist is the 'Favorites' list. This list allows you to store items that you frequently buy, so you can add them to your shopping list with just one click. This saves time and effort and makes your shopping experience more efficient.",
         "type" : "Personal project",
         "personal" : ["JavaScript", "React", "SCSS", "Nodejs", "Express", "Figma"],
         "time" : "June 2022",
@@ -31,8 +41,8 @@
     },
     {
         "title" : "Nobelcharts",
-        "shortInfo" : "Charts with a twist",
-        "info" : "Website to show various nobel laureates data in graphs with 'fun' animation. Animations from 90's cartoons",
+        "shortInfo" : "A website that provides a unique and entertaining way to explore the world of Nobel. With its animated 90's cartoon style, Nobelgraphs makes history and science a fun and engaging experience.",
+        "info" : "Introducing Nobel Graphs, the one-of-a-kind website that provides a unique and entertaining way to explor e the world of Nobel laureates and prizes. With its animated 90's cartoon style, Nobel Graphs makes learning about history and science a fun and engaging experience.",
         "type" : "School project",
         "personal" : ["JavaScript", "TypeScript", "Vue", "SCSS", "AnimeJS", "GraphJS", "Docker", "Figma"],
         "time" : "November 2022",

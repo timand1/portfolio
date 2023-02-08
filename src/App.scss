@@ -1,3 +1,5 @@
+@use './styles//colors.scss';
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -5,4 +7,8 @@
 
 .App {
     overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, p, span, a, svg {
+    color: colors.$primary-font;
 }

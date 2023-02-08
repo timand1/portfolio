@@ -27,7 +27,7 @@ const fetchIcon = async () => {
     <div className='skill'>
         <img src={icon!} alt="" />
         <div className="skill-header">
-            <h2>{title}</h2>
+            <h1>{title}</h1>
             <p>{info}</p>            
         </div>
         {languages &&

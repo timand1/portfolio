@@ -1,27 +1,15 @@
-// Background
-$primary-bg-light: #4c7972;
-$primary-bg-dark: #111222;
+$primary-bg: #191a19;
+$secondary-bg: #4c7972;
+$primary-accent: tomato;
 
-// Typography
-$primary-font-light: black;
-$primary-font-dark: #fff;
+$primary-font: rgb(228, 228, 228);
+$secondary-font: rgb(22, 22, 22);
+$primary-font-transparent: rgba(228, 228, 228, 0.8);
+$primary-card-bg: #222728;
+$secondary-card-bg: #d1d1d1;
 
 // Hero 
 $content-light: rgba(0, 0, 0, 0.1);
-$content-dark: rgba(255, 255, 255, 0.1);
 
 // Button
-$button-bg-light: steelblue;
-$button-bg-dark: #00A97F;
-
-// ,
-//     {
-//         "title" : "Rescue Rabbits",
-//         "shortInfo" : "A hope to save them all",
-//         "info" : "Simple website for an Animal Shelter to show and search for animals the shelter have",
-//         "type" : "Group School project",
-//         "personal" : ["JavaScript", "TypeScript", "Vue", "SCSS", "Figma"],
-//         "time" : "September 2022",
-//         "url" : "",
-//         "github" : ["https://github.com/timand1/rescue-rabbits-magic-monkeys"]
-//     }
+$button-bg-light: tomato;

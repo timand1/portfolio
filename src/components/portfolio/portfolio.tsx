@@ -14,7 +14,7 @@ function Portfolio() {
         />)
 
     return (
-      <div className='portfolio'>
+      <div className='portfolio' id='projects'>
         <h2 className='portfolio-title'>Recent Work</h2>
         {projectElems}
       </div>    

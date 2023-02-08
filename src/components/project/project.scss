@@ -2,6 +2,7 @@
     position: relative;
     height: 50vh;
     width: 65vw;
+    max-width: 1200px;
     color: #fff;
     padding: 40px;
     box-shadow: 0 20px 80px 0 rgb(0 0 0 / 45%);
@@ -17,17 +18,21 @@
     }
 
     &:nth-child(odd) {
-        justify-content: flex-end;
         transform: translateX(-200%);
+        .project-info {
+            align-items: flex-end;
+        }
         .project-index {
             left: -40px;
         }
     }
     &:nth-child(even) {
-        justify-content: flex-start;
         transform: translateX(200%);
         .project-index {
             right: -40px;
+        }
+        .project-info {
+            align-items: flex-start;
         }
     }
 
@@ -46,11 +51,7 @@
         p {
             font-size: 18px;
         }
-    }
-
-    button {
-        align-self: flex-start;
-    }
+    }   
 
     .project-image {
         position: absolute;
@@ -111,12 +112,15 @@
 @media screen and (max-width: 786px) {
     .project {
         width: 90vw;
+        padding: 20px;
+
         .project-index {
             display: none;
          }
 
         .project-info {
             margin: 0px;
+            justify-content: space-between;
     
             h2 {
                 font-size: 28px;

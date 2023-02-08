@@ -2,31 +2,23 @@
 @use '../../styles/variables';
 
 body button {
-
-        all: unset;
-        color: #fff;
-         font-family: 'Poppins', sans-serif;
-        cursor: pointer;
-        text-transform: uppercase;
-        font-size: 16px;
-        line-height: 45px;
-        padding: 0 20px;
-        border-radius: 8px;
-        background: linear-gradient(to left, tomato 50%, lightblue 50%) right;
-        background-size: 200%;
-        transition: all 0.25s;
-        &:hover {
-          background-position: left;
-          color: #000;
-        }
-      
-
-
-}
-
-.dark button {
-    text-transform: uppercase;
-    color: colors.$button-bg-dark;  
-
-
+  all: unset;
+  white-space: nowrap;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 45px;
+  padding: 0 20px;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 8px;
+  background: linear-gradient(to left, colors.$primary-accent 50%, colors.$secondary-bg 50%) right;
+  background-size: 200%;
+  transition: all 0.25s;
+  &:hover {
+    background-position: left;
+    color: #000;
+  }
 }

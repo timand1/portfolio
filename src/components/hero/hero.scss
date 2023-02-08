@@ -2,7 +2,7 @@
 @use '../../styles/variables';
 
 .hero {
-    height: 100vh;
+    height: 80vh;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -10,7 +10,11 @@
     justify-content: space-evenly;
     align-items: center;
     .hero--header {
+        padding: 80px;
+        border-radius: 28% 72% 29% 71% / 17% 28% 72% 83% ;
         display: flex;
+        min-width: 800px;
+        border: 2px solid colors.$secondary-bg;
         flex-direction: column;
         align-items: center;
         gap: 20px;
@@ -18,9 +22,8 @@
         h1 {
             font-size: 48px;
             text-align: center;
-            color: white;
-            background: linear-gradient(-45deg, #639e95, steelblue ,#639e95, steelblue);
-            background: linear-gradient(-45deg, #639e95, steelblue ,#639e95, steelblue);
+            background: linear-gradient(-45deg, colors.$secondary-bg colors.$primary-accent ,colors.$secondary-bg, colors.$primary-accent);
+            background: linear-gradient(-45deg, colors.$secondary-bg, colors.$primary-accent ,colors.$secondary-bg, colors.$primary-accent);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -31,6 +34,21 @@
         h1, h2 {
             margin: 0;
             flex: 1;
+        }
+    }
+
+    .hero--brands {
+        display: flex;
+        gap: 20px;
+        svg {
+            font-size: 38px;
+            transition: all 0.35s;
+            color: colors.$secondary-bg;
+            &:hover {
+                scale: 120%;
+                color: colors.$primary-accent;
+            }
+
         }
     }
     .hero--content {
@@ -67,23 +85,23 @@
 
     }
     .scroll-indicator  {
-        z-index: 800;
+        z-index: 99999;
         position: fixed;
         height: 100vh;
         top: 0;
         left: 10px;
     }
     .hero--links {
-        z-index: 999;
+        z-index: 9999999;
         display: flex;
         position: fixed;
-        bottom: 110px;
-        left: 5px;
+        bottom: 107px;
+        left: 0;
         height: fit-content;
         width: fit-content;
-        padding: 10px;
+        padding: 10px 14px;
         flex-direction: column;
-        background-color: #4c797281;
+        background-color: colors.$secondary-bg;
         backdrop-filter: blur(20px);
         gap: 15px;
         a {
@@ -92,13 +110,13 @@
                 scale: 140%;
                 svg {
 
-                    color: white;
+                    color: colors.$primary-font;
                 }
                 
             }
             svg {
                 transition: all 0.25s;
-                color: black;
+                color: colors.$primary-bg;
                 font-size: 28px;
             }
         }
@@ -106,39 +124,17 @@
     }
 }
 
-.dark .hero {
-    .hero--header {
-       h2 {
-        background: linear-gradient(-45deg, rgb(166, 166, 201), rgb(214, 17, 214) ,rgb(200, 200, 211), rgb(245, 52, 245));
-        background: linear-gradient(-45deg, rgb(210, 210, 224), rgb(211, 18, 211) ,rgb(60, 60, 223), rgb(255, 27, 255));
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-size: 400% 400%;
-        -webkit-animation: gradient 3s ease infinite;
-        animation: gradient 3s ease infinite;
-       }
-    }
-    .hero--content {       
-        .hero--text  {
-            background: colors.$content-dark;
-            border: 1px solid colors.$content-dark;
-        }
-
-    }
-    .hero--links {
-        a {
-            filter: invert(100%) ;
-            &:hover {
-                filter: invert(40%) sepia() saturate(10000%) hue-rotate(200deg);
-
-            }
-        }
-    }
-}
 
 @media screen and (max-width: 786px) {
     .hero {
         overflow: hidden;
+        .hero--header {
+            padding: 120px 30px;
+            min-width: 100vw;
+            .headline-name {
+                font-size: 34px;
+            }
+        }
         .hero--content {
             height: 400px;
             position: relative;
@@ -179,25 +175,7 @@
         }
 
         .hero--links {
-            top: 0px;
-            left: 0px;
-            height: fit-content;
-            width: 100%;
-            padding: 10px;
-            padding-left: 100px;
-            flex-direction: row;
-            background-color: rgba(70, 131, 180, 0.253);
-            backdrop-filter: blur(20px);
-            gap: 15px;
-            &:before {
-                content: '';
-                position: absolute;
-                top: 20px;
-                left: 0px;
-                width: 90px;
-                height: 4px;
-                background-color: black;
-            }
+            display: none;
         }
     }
 }

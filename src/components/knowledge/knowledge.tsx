@@ -8,7 +8,7 @@ function Knowledge() {
     <Skill key={index} title={skill.title} info={skill.info} tools={skill.tools} languages={skill.languages} enjoy={skill.enjoy}/>)
 
   return (
-    <div className='knowledge'>
+    <div className='knowledge' id='knowledge'>
       {skillsElem}
     </div>    
   )

@@ -1,11 +1,6 @@
 @use './styles/colors.scss';
 
 body {
-  background-color: colors.$primary-bg-light;
-  color: colors.$primary-font-light;
-}
-
-.dark {
-  background-color: colors.$primary-bg-dark;
-  color: colors.$primary-font-dark
+  background-color: colors.$primary-bg;
+  color: colors.$primary-font;
 }
