@@ -96,14 +96,14 @@ useEffect(() => {
               </g>
             </svg>
             <div>
-            <p>Previous project</p>
-            <h2>{prevProject?.title}</h2>
+            <h2>Previous</h2>
+            <p>{prevProject?.title}</p>
           </div>
           </div>
           <div className='project__full--nav project__full--next'>
           <div>
-            <p>Next project</p>
-            <h2>{nextProject?.title}</h2>
+            <h2>Next</h2>
+            <p>{nextProject?.title}</p>
           </div>
             <svg onClick={() => navigate(`/${nextProject?.title.replace(/\s/g, '').toLowerCase()}`)} width="18px" height="17px" viewBox="-1 0 18 17">
               <g>

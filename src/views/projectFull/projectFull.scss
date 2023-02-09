@@ -3,7 +3,7 @@
 .project__container {
     .project__navbar {
         background-color: colors.$primary-bg;
-        height: 70px;
+        height: 60px;
         min-height: max-content;
         padding: 0 20px;
         display: flex;
@@ -51,6 +51,7 @@
     .project__full {
         position: relative;
         min-height: 80vh;
+        height: 500px;
         width: 100%;
         color: colors.$primary-font;
         display: flex;
@@ -138,7 +139,7 @@
     
     }
     .project__full--footer {
-        height: 120px;
+        height: 100px;
         background-color: colors.$primary-bg;
         display: flex;
         justify-content: space-between;
@@ -150,6 +151,11 @@
             p {
                 font-size: 18px;
             }
+        .project__full--next {
+            div {
+                text-align: end;
+            }
+        }
 
         }
         .project__full--nav {            
@@ -214,7 +220,7 @@
 @media screen and (max-width: 936px) {
     .project__container {
         .project__full {
-            padding: 20px;
+            padding: 14px;
             flex-direction: column;
             .project__full--left {
                 .project__image--mobile {
@@ -229,7 +235,7 @@
                 }
                 
                 .project__full--shortinfo {
-                    line-height: 30px;
+                    line-height: 26px;
                     display: block;
                     width: 90vw;
                     font-size: 16px;
@@ -261,7 +267,12 @@
         }
         .project__full--footer {
             .project__footer--text {
-
+                height: 100%;
+                gap: 10px;
+                .project__full--prev, .project__full--next {
+                    justify-content: space-between;
+                    width: 50%;
+                }
                 p {
                     font-size: 14px;
                 }
@@ -269,9 +280,14 @@
                     font-size: 16px;
                 }
             }
+            div {
+                flex: 3;
+            }
             .project__full--nav {
                 svg {
-                    width: 50px;
+                    flex: 1;
+                    width: 40px;
+                    margin: 14px;
                 }
             }
         }
