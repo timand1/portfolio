@@ -111,26 +111,25 @@
 
 @media screen and (max-width: 786px) {
     .navbar {
-        height: 6vh;
+        height: 40px;
         padding: 0 20px;
-        background-color: colors.$secondary-bg;
+        background-color: colors.$primary-bg;
         .navbar--icons {
             display: flex;
             position: relative;
-            height: 6vh;
+            height: 40px;
             width: 50vw;
             padding: 10px;
-            padding-left: 70px;
+            padding-left: clamp(10px, 20vw, 70px);
             flex-direction: row;
             font-size: 24px;
-            background-color: colors.$secondary-bg;
             gap: 15px;
             &:before {
                 content: '';
                 position: absolute;
                 top: 20px;
                 left: 0px;
-                width: 60px;
+                width: clamp(0px, 15vw, 60px);
                 height: 4px;
                 background-color: colors.$primary-font;
             }
@@ -144,22 +143,23 @@
 
         .navbar--links {
             position: absolute;
-            top: 6vh;
+            top: 40px;
             right: -100%;
-            height: 94vh;
+            height: 95vh;
             width: 100%;
-            background-color: #4c797269;
+            background-color: #191a198f;
             backdrop-filter: blur(20px);
             padding: 20px;
             flex-direction: column;
+            overflow: scroll;
             justify-content: space-around;
-            padding: 40% 20px;
+            padding: clamp(12px, 5vh, 40%) 20px;
             gap: 20px;
             transition: all 0.25s;
         }
 
         .open ~ .navbar--links {
-            right: -55%;
+            right: -45%;
         }
     }
         
