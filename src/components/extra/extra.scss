@@ -22,6 +22,7 @@
         margin-top: 40px;
         display: flex;
         flex: 1;
+        overflow: hidden;
         .extra-overlay {
             position: absolute;
             top: 0;
@@ -32,6 +33,22 @@
             background-color: colors.$primary-accent;
             z-index: 100;
         }
+        .mobile--overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 3s;
+            height: 100%;
+            width: 100%;
+            background-color: colors.$primary-accent;
+            z-index: 100;
+        }
+
+        .mobile-animation {
+            transform: translateY(100%);
+        }
+
     }
 }
 
@@ -40,6 +57,12 @@
         .experiments-container {
             flex-direction: column;
             max-height: 100%;
+            .extra-overlay {
+                display: none;
+            }
+            .mobile--overlay {
+                display: block;
+            }
         }
     }
 }

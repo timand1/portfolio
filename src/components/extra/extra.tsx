@@ -19,6 +19,11 @@ function Extra() {
     const elScrollY = overlayEl?.getBoundingClientRect().y!
     const elHeight = overlayEl?.getBoundingClientRect().height!
     const scrollPercentage = (window.innerHeight - elScrollY) / elHeight
+  
+    const overlayMobile = document.querySelector('.mobile--overlay')
+    const scrollYMobile = overlayMobile?.getBoundingClientRect().y!
+    const elHeightMobile = overlayMobile?.getBoundingClientRect().height!
+    const scrollPercentageMobile = ((window.innerHeight - scrollYMobile)) / elHeightMobile
 
     let animation = anime({
       targets: '.extra-overlay',
@@ -30,9 +35,17 @@ function Extra() {
       duration: 10000
     });
 
+    if(scrollPercentageMobile > 0.2) {
+      overlayMobile?.classList.add('mobile-animation')
+    }
+
     if(elScrollY < 900) {
       animation.seek(scrollPercentage * animation.duration);
     }
+
+ 
+
+
       window.addEventListener("scroll", setScroll);
       return () => {
       window.removeEventListener("scroll", setScroll);
@@ -48,6 +61,7 @@ function Extra() {
       </div>
        <section className='experiments-container'>
         <div className='extra-overlay'></div>
+        <div className='mobile--overlay'></div>
         {experiments}
        </section>
     </div>    
