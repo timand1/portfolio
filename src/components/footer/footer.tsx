@@ -12,7 +12,10 @@ function Footer() {
             <a href="https://github.com/timand1">GitHub  <FontAwesomeIcon icon={faGithub} /></a>
             <a href="https://www.linkedin.com/in/tim-andersson-04531b253/">LinkedIn <FontAwesomeIcon icon={faLinkedin} /></a>
         </div>
-        <p>	&#169; Tim Andersson {date} - <a href="mailto:timandersson22@live.se">Contact</a></p>
+        <div className='footer--about'>
+          <p>	&#169; Tim Andersson {date}</p>
+          <p>E-mail - timandersson22@live</p>
+        </div>
       </div>    
     )
   }

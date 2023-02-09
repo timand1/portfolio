@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.svg'
 import './navbar.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,15 +13,45 @@ const navigate = useNavigate()
 const [menuOpen, setMenuOpen] = useState<boolean>(false)
 const scrollToSection: (section : string) => void = (section) => {
   setMenuOpen(false)
-  document.getElementById(section)?.scrollIntoView({behavior: 'smooth',})
+
+  navigate('/')
+  const y = document.getElementById(section)!.getBoundingClientRect().top + window.pageYOffset - 120;
+  window.scrollTo({ top: y, behavior: "smooth" });
 }
+
+
+const useOutsideClick = (callback: () => void) => {
+  const navRef  = useRef(null);
+
+  useEffect(() => {
+    function handleClick (event:any) {     
+      if (navRef.current && !(navRef.current as HTMLElement).contains(event.target)) {
+        callback();
+      }
+    };
+
+    document.addEventListener('click', handleClick);
+
+    return () => {
+      document.removeEventListener('click', handleClick);
+    };
+  }, [navRef]);
+
+  return navRef;
+};
+
+const handleClickOutside = () => {
+  setMenuOpen(false)
+};
+
+const navRef = useOutsideClick(handleClickOutside);
 
 const toggleMenu: () => void = () => {
   setMenuOpen(!menuOpen)
 }
 
     return (
-      <div className='navbar'>
+      <div className='navbar' ref={navRef}>
         <img onClick={(e) => navigate('/')} src={logo} alt="Tim Andersson Logo" />
         <div className='navbar--icons'>
             <a href="http://www.github.com/timand1" target="_blank">
@@ -40,12 +71,12 @@ const toggleMenu: () => void = () => {
           <div className='close-bar'></div>
         </div>
         <div className='navbar--links'>
-          <p onClick={(e) => scrollToSection('home')}>home</p>
-          <p onClick={(e) => scrollToSection('about')}>about</p>
-          <p onClick={(e) => scrollToSection('knowledge')}>knowledge</p>
-          <p onClick={(e) => scrollToSection('projects')}>projects</p>
-          <p onClick={(e) => scrollToSection('experiments')}>experiments</p>
-          <a href="mailto:timandersson22@live.se">contact</a>
+          <p onClick={() => scrollToSection('home')}>home</p>
+          <p onClick={() => scrollToSection('about')}>about</p>
+          <p onClick={() => scrollToSection('knowledge')}>knowledge</p>
+          <p onClick={() => scrollToSection('projects')}>projects</p>
+          <p onClick={() => scrollToSection('experiments')}>experiments</p>
+          <p onClick={() => scrollToSection('contact')}>contact</p>
         </div>
       </div>    
     )

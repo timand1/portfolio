@@ -23,8 +23,18 @@
         }
     }
 
-    a {
-        all: unset;
-        cursor: pointer;
+    .footer--about {
+        display: flex;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .footer {
+        .footer--about {
+            align-items: center;
+            gap: 10px;
+            flex-direction: column;
+        }
     }
 }

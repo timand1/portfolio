@@ -1,58 +1,16 @@
 @use '../../styles/colors.scss';
 
 .project__container {
-    .project__navbar {
-        background-color: colors.$primary-bg;
-        height: 60px;
-        min-height: max-content;
-        padding: 0 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        img {
-            cursor: pointer;
-            height: 70%;
-        }
-    
-        .project__navbar--links {
-            display: flex;
-            font-size: 24px;
-            font-weight: 600;
-            color: colors.$primary-font;
-            gap: 24px;
-            text-transform: lowercase;
-            a, p {
-                all: unset;
-                position: relative;
-                cursor: pointer;
-                font-size: 18px;
-                letter-spacing: 4px;
-                gap: 24px;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    bottom: -6px;
-                    left: 0;
-                    width: 100%;
-                    height: 4px;
-                    background: linear-gradient(to left, transparent 51%, colors.$primary-accent 50%) right;
-                    background-size: 200%;
-                    transition: all 0.25s;
-                }
-    
-                &:hover {
-                    &::before {
-                        background-position: left;
-                    }
-                }
-            }
-        }
-    }
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     .project__full {
         position: relative;
-        min-height: 80vh;
+        flex-grow: 1;
+        max-width: 2000px;
         height: 500px;
         width: 100%;
+        margin-top: 70px;
         color: colors.$primary-font;
         display: flex;
         justify-content: space-between;

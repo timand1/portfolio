@@ -79,7 +79,7 @@ function Hero() {
 
   return (
     <div className='hero' id='home' >
-        <Navbar />
+
         <div className='hero--header'>
             <h2>Hi, my name is</h2>
             <h1 className='headline-name' data-value="TIM ANDERSSON">TIM ANDERSSON</h1>

@@ -4,16 +4,38 @@
     margin-top: 40px;
     .title {
         text-align: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        color: colors.$primary-font;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 70%;
+            height: 4px;
+            background-color: colors.$primary-accent;
+            bottom: -10px;
+            left: 0;
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            width: 70%;
+            height: 4px;
+            background-color: colors.$primary-accent;
+            top: 0;
+            right: 0;
+        }
+        
         p {
+            position: relative;
             text-transform: uppercase;
-            font-size: 18px;
-            font-weight: 700;
-            font-family: monospace;
-            margin-bottom: 20px;
-            color: colors.$secondary-bg;
+            text-align: center;
+            font-size: 48px;
         }
         h2 {
-            font-size: 28px;
+            font-size: 24px;
+            font-weight: 400;
         }
     }
     .experiments-container {

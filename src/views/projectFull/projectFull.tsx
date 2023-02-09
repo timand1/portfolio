@@ -3,7 +3,6 @@ import Button from '../../components/button/button'
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import projectData from '../../data/portfolio.json'
-import logo from '../../assets/logo.svg'
 
 type ProjectProps = {
     title: string
@@ -14,6 +13,7 @@ type ProjectProps = {
     url: string
     github: string[]
     shortInfo?: string
+    
 }
 
 function ProjectFull() {  
@@ -21,43 +21,40 @@ const { title } = useParams()
 const navigate = useNavigate()
 
 const [image, setImage] = useState<string>('')
-const [project, setProject] = useState<ProjectProps>(projectData.find(el => el.title.replace(/\s/g, '').toLowerCase() === title)!)
+const [project, setProject] = useState<ProjectProps>(projectData[0])
 const [nextProject, setNextProject] = useState<ProjectProps>()
 const [prevProject, setPrevProject] = useState<ProjectProps>()
-useEffect(() => {
-  
-  const fetchImage = async () => {
-        await import(`../../assets/${title}.png`).then(image => setImage(image.default))
-    }
-    fetchImage()
 
-    const index: number = projectData.findIndex(el => el.title.replace(/\s/g, '').toLowerCase() === title)      
-    const getNextProject = () => {
-      projectData[index + 1] ?
-        setNextProject(projectData[index + 1] )
-      : 
-        setNextProject(projectData[0] )      
-    }
-    const getPrevProject = () => {
-      projectData[index - 1] ?
-      setPrevProject(projectData[index - 1] )
-      : 
-      setPrevProject(projectData[projectData.length - 1] )      
-    }
-    setProject(projectData[index])
-    getPrevProject()
-    getNextProject()    
+useEffect(() => {
+  if(!projectData.find(el => el.title.replace(/\s/g, '').toLowerCase() === title)) {
+    navigate('/error')
+  } else {
+    setProject(projectData.find(el => el.title.replace(/\s/g, '').toLowerCase() === title)!)
+    const fetchImage = async () => {
+          await import(`../../assets/${title}.png`).then(image => setImage(image.default))
+      }
+      fetchImage()
+      const index: number = projectData.findIndex(el => el.title.replace(/\s/g, '').toLowerCase() === title)      
+      const getNextProject = () => {
+        projectData[index + 1] ?
+          setNextProject(projectData[index + 1] )
+        : 
+          setNextProject(projectData[0] )      
+      }
+      const getPrevProject = () => {
+        projectData[index - 1] ?
+        setPrevProject(projectData[index - 1] )
+        : 
+        setPrevProject(projectData[projectData.length - 1] )      
+      }
+      setProject(projectData[index])
+      getPrevProject()
+      getNextProject()        
+  }
   }, [title]);
 
     return (
       <div className='project__container'>
-        <div className='project__navbar'>
-            <img onClick={() => navigate('/')} src={logo} alt="Tim Andersson Logo" />
-          <div className='project__navbar--links'>
-            <p onClick={() => navigate('/')}>Home</p>
-            <a href="mailto:timandersson22@live.se">Contact</a>
-          </div>
-        </div>    
         <div className='project__full'>
           <div className='project__full--left'>
             <h2>{project?.title}</h2>
